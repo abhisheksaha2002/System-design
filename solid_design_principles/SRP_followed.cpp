@@ -40,7 +40,8 @@ public:
     }
 };
 class ShoppingCartPrinter{
-
+private:
+ShoppingCart cart;
 
 public:
     // 2. ShoppingCartPrinter: Only responsible for printing invoices
@@ -54,7 +55,8 @@ public:
 
 };
 class ShoppingCartStorage{
-    
+private:
+ShoppingCart cart;
 public:
    
 // 3. ShoppingCartStorage: Only responsible for saving cart to DB
