@@ -81,7 +81,8 @@ public:
 
 class BankClient {
 private:
-    vector<WithdrawableAccount*> withdrawableAccounts;
+    vector<WithdrawableAccount*> withdrawableAccounts;//following
+    // 1:many relationship{numerous withdrwable accounts we are going to store in this vector}
     vector<DepositOnlyAccount*> depositOnlyAccounts;
 
 public:
@@ -103,6 +104,7 @@ public:
 };
 
 int main() {
+
     vector<WithdrawableAccount*> withdrawableAccounts;
     withdrawableAccounts.push_back(new SavingAccount());
     withdrawableAccounts.push_back(new CurrentAccount());
